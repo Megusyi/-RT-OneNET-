@@ -74,32 +74,6 @@ flutter run
 python face_access_control.py
 ```
 
-## 项目结构
-
-```
-APPalter_2/
-├── lib/                          # Flutter APP源码
-│   ├── main.dart                 # 入口，4 个Tab导航
-│   ├── config/app_config.dart    # OneNET配置
-│   ├── models/                   # 数据模型
-│   ├── pages/                    # 页面
-│   ├── providers/                # 状态管理（Provider）
-│   ├── services/                 # MQTT与HTTP API服务
-│   └── styles/                   # 全局样式
-├── documents/
-│   ├── face_access_control.py    # K230人脸识别系统
-│   └── stm32/applications/       # STM32固件源码
-│       ├── main.c                # 系统入口
-│       ├── app_def.h             # 引脚映射与协议定义
-│       ├── Mq2.c                 # MQ-2烟雾传感器驱动
-│       ├── door_lock.c/h         # 门锁控制
-│       ├── k230_uart.c           # K230 UART协议
-│       ├── onenet_sample.c       # 数据上传
-│       ├── onenet_recv.c         # 命令接收
-│       └── docker.c              # 声光报警
-└── docs/
-```
-
 ## 技术栈
 
 | 类别 | 技术 |
